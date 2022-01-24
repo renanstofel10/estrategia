@@ -1,36 +1,36 @@
-# EXERCÍCIO 2
-Testes automatizados de API utilizando Supertest.
+# EXERCISE 2
+Automated api tests using Supertest
 
-## Pré-requisitos para rodar localmente
+## Requisites to run locally
 
-*  [Instalação do node](https://nodejs.org/en/download/)
-*  [Instalação do npm](https://www.npmjs.com/get-npm)
+*  [Node Installation](https://nodejs.org/en/download/)
+*  [NPM Installation](https://www.npmjs.com/get-npm)
 
-#### Atenção: É necessário que a máquina esteja com todas as dependencias instaladas:
+#### Attention: The machine must have all dependencies installed:
 
-* Abrir o terminal e acessar o diretório `estrategia/api`;
-* Usar o comando ```npm install``` onde se ecnontra o arquivo `package.json`:
+* Open the terminal and access the `estrategia/api` directory;
+* Use the ```npm install``` command where the `package.json` file is found.
 
-## Rodando os testes de integração
+## Running integration tests
 
-* No diretório `estrategia/api`, usar o comando: `npm run test`
+* In the `estrategia/api` directory, use the command `npm run test`.
 
-## Visualizando report detalhado de execução dos testes
+## Viewing detailed test execution report
 
-* Após execução dos testes acima, será gerado um arquivo `index.html` no diretório `estrategia/reports`; Para visualizar é so abrir este arquivo.
+* After running the tests above, a `index.html` file will be generated in the `estrategia/reports` directory; To view, just open this file.
 
-## Resumindo o projeto
+## Summarizing the project
 
-* Dentro da pasta `estrategia/api` temos as pastas: `schemas`, `specs` e `reports`;
+* Inside the `strategy/api` folder we have the following folders: `schemas`, `specs` and `reports`
 
-  * Na pasta `schemas` ficam os arquivos `schema.js` que são utilizados na realização dos testes de contrato de API;
+  * In the `schemas` folder are the `schema.js` files that are used to perform API contract tests;
 
-  * Na pasta `specs` ficam as pastas com arquivos `spec.js` que contém os cenários de testes executados e o arquivo `parameters.json` utilizado de massa de dados para execução dos testes;
+  * In the `specs` folder are the folders with `spec.js` files that contain the executed test scenarios and the `parameters.json` file used as the data mass for the tests execution;
 
-  * Na pasta `reports` temos os arquivos gerados após execução dos testes;
+  * In the `reports` folder we have the files generated after running the tests;
 
-* Na raiz do projeto também é possível visualizar os seguintes arquivos:
+* In the project root it is also possible to view the following files:
 
-  * `package.json` e `package-lock.json`: Arquivo com nossas dependências e os scripts
+  * `package.json` and `package-lock.json`: File with our dependencies and scripts
 
-  * `.env`: Arquivo com a variavel de ambiente `url` utilizada nos testes
+  * `.env`: File with the `url` environment variable used in the tests
