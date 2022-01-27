@@ -1,0 +1,74 @@
+Documento de Bugs e/ou Melhorias
+
+001 (BUG)
+Título - Valor total de curso da busca por professor está arredondando para mais quando o mesmo é quebrado
+
+Descrição:
+Ao acessar determinado curso na busca por professor, o valor total exibido na tela de detalhes do curso está arredondado. 
+Isso pode ocasionar perdas para o cliente que deseja comprar muitos cursos e partilhá-los.
+
+Cenário encontrado:
+1. Acessar pesquisa de cursos por professor;
+2. Selecionar professor "Carla Abreu";
+3. Selecionar curso "EBSERH (Pedagogo) Conhecimentos Básicos - 2022 (Pós-Edital)" com "12 parcelas de R$ 15,83";
+4. Verificar valor total "R$ 190,00" ao invés de "R$ 189,96" exibido em detalhes do curso.
+
+ps: Vide bug001.png nas evidências.
+
+-----------------------------------------------
+002 (BUG)
+Títulos - Quantidade de cursos exibida na listagem de cursos por concurso está diferente da quantidade de cursos de detalhes do concurso
+
+Descrição:
+Ao acessar a listagem de cursos "Por concurso" é exibido uma lista de concursos com quantidade de cursos disponíveis. 
+Acessando um concurso da lista, foi verificado que a quantidade de cursos disponíveis na tela anterior é diferente.
+
+Cenário encontrado:
+1. Acessar pesquisa de cursos por concurso;
+2. Verificar a quantidade "154" exibida em cursos disponíveis do concurso "Área Legislativa";
+3. Acessar concurso "Área Legislativa";
+4. Verificar a quantidade "165" exibida em cursos disponíveis do concurso selecionado.
+
+ps: Vide anexos (bug002_1.png e bug002_2.png)
+
+----------------------------------------------
+003 (BUG)
+Títulos - Listagem de cursos por professor apresentando registros duplicados
+
+Descrição:
+Ao acessar a listagem de cursos por professor foi verificado que alguns cursos aparecem de forma duplicada.
+
+Cenário encontrado:
+1. Acessar pesquisa de cursos por professor;
+2. Acessar cursos do professor "Aieska Monfardini";
+3. Para facilitar, filtrar os cursos pela palavra "PM-SP (Oficial)"
+
+Resultado: Na listagem de registros encontrados apresentam-se 2 registros duplicados.
+
+ps: Ver anexo (bug003.png)
+
+----------------------------------------------
+004 (BUG)
+Títulos - Resultados de busca por palavra chave não refletem o total de pacotes disponíveis quando maior que 15
+
+Descrição:
+Ao consultar pacotes de cursos pela palavra chave, obetemos um resultado informativo de "x registros encontrados" que por sua vez não são equivalente ao total re registros que estão paginados mostrando somente (15);
+
+Cenário encontrado:
+1. Na homepage, pesquisar a palavra chave "Polícia Militar";
+2. Verificar a quantidade "15" registros encontrados;
+3. No final da listagem dos pacotes de cursos, selecionar a opção "Ver mais cursos";
+
+Resultado: Site atualizou o índice 15 para 30 com o carregamento de novos pacotes de cursos.
+
+ps: Ver anexos (bug004_1.png, bug004_2.png e bug004_3.png)
+
+----------------------------------------------
+005 (MELHORIA)
+Título - Criar paginação na listagem de cursos (Otimizar Performance e Usabilidade)
+
+Descrição:
+Ao acessar a listagem de cursos é exibido uma enorme lista de cursos disponíveis.
+Neste caso é sugerido que a trabalhemos com paginação na busca de modo que a exibição se torne mais rápida e a experiência do usuário melhor.
+
+ps: Vide melhoria001.png nas evidências.
